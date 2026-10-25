@@ -28,7 +28,7 @@ Trabajo en **logística y depósito** y armo software para resolver los problema
 - **Frontend:** React, Next.js, TypeScript, Tailwind, PWA
 - **Mobile:** React Native, Expo, EAS (builds y OTA), offline-first con SQLite/PowerSync
 - **Backend y datos:** Supabase, PostgreSQL, Row Level Security, Python
-- **Otros:** visión por computadora básica, ESP32/Arduino, Git, Vercel
+- **Otros:** visión por computadora básica, Git, Vercel
 
 ## 📊 Stats
 
