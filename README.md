@@ -1,4 +1,4 @@
-<h1 align="center">Hola, soy Lucas 👋</h1>
+<h1 align="center">Hola, soy Lucas Gómez 👋</h1>
 <p align="center"><b>Logística de día · desarrollo de herramientas reales el resto del tiempo</b><br>Córdoba, Argentina 🇦🇷</p>
 
 <p align="center">
