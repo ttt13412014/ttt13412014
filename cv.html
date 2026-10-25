@@ -1,0 +1,76 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>CV - Lucas</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#1d2433;font-size:9.8pt;line-height:1.33}
+.page{width:210mm;height:297mm;padding:11mm 14mm 9mm;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #1f6feb;padding-bottom:7px;margin-bottom:9px}
+h1{margin:0;font-size:27pt;letter-spacing:.5px}
+.role{font-size:11.5pt;color:#1f6feb;font-weight:600;margin-top:2px}
+.contact{text-align:right;font-size:9.2pt;color:#444;line-height:1.5}
+.ph{background:#fff3bf;padding:0 3px;border-radius:2px}
+h2{font-size:10.3pt;text-transform:uppercase;letter-spacing:1.2px;color:#1f6feb;margin:8px 0 3px;border-bottom:1px solid #d0d7de;padding-bottom:2px}
+p{margin:0 0 4px}
+.job{margin-bottom:5px}
+.jh{display:flex;justify-content:space-between;font-weight:700}
+.jh span{font-weight:400;color:#555;font-size:9.2pt}
+.sub{color:#555;font-size:9.2pt;margin-bottom:2px}
+ul{margin:2px 0 0;padding-left:16px}
+li{margin:1px 0}
+.stack{font-size:8.8pt;color:#1f6feb;margin-top:2px}
+.skills{display:grid;grid-template-columns:118px 1fr;gap:2px 8px;font-size:9.6pt}
+.skills b{color:#333}
+a{color:#1f6feb;text-decoration:none}
+</style></head><body><div class="page">
+<header>
+ <div><h1>Lucas</h1><div class="role">Logística · Desarrollo web y mobile</div></div>
+ <div class="contact">Córdoba, Argentina<br>
+ <a href="https://github.com/ttt13412014">github.com/ttt13412014</a><br>
+ <span class="ph">[tu-email@ejemplo.com]</span><br><span class="ph">[+54 9 351 XXX-XXXX]</span></div>
+</header>
+
+<h2>Perfil</h2>
+<p>Trabajo en logística y depósito, y desarrollo herramientas que resuelven problemas reales de ese día a día: un sistema de gestión que hoy usa una distribuidora, una app móvil offline con visión artificial y una PWA que cuenta piezas con la cámara. Me muevo cómodo de punta a punta: base de datos y seguridad, interfaz, deploy e iteración rápida con los usuarios. Uso herramientas de desarrollo asistido por IA para avanzar rápido y reviso y pruebo lo que sale.</p>
+
+<h2>Experiencia</h2>
+<div class="job"><div class="jh">Logística / Depósito — Balcami <span>Córdoba</span></div>
+<ul><li>Tareas de logística y depósito. <span class="ph">[Completar: fechas y tareas principales]</span></li>
+<li>Desarrollé una herramienta propia para contar bulonería con la cámara del celular y agilizar los conteos de inventario (ver proyectos).</li></ul></div>
+
+<h2>Proyectos</h2>
+<div class="job"><div class="jh">DE&amp;CO — Sistema de gestión (ERP liviano a medida) <span><a href="https://github.com/ttt13412014/deco-admin">github.com/ttt13412014/deco-admin</a></span></div>
+<div class="sub">En producción y en uso diario por el equipo administrativo de una distribuidora · <a href="https://deco-admin.vercel.app">deco-admin.vercel.app</a></div>
+<ul><li>Más de 10 módulos: clientes, cobranzas, reparto, tesorería, personal, catálogo y permisos; 29 tablas con seguridad por filas (RLS) y permisos por rol y por sección.</li>
+<li>Hoja de ruta automatizada: ruta en Google Maps, link para choferes que marcan cada entrega, lectura automática de facturas PDF y reporte por WhatsApp.</li>
+<li>Importación de Excel de un sistema contable, conciliación bancaria, cheques, cierre de caja diario y auditoría de cambios.</li>
+<li>Iteración rápida con el feedback de las usuarias: 18 versiones en 4 días.</li></ul>
+<div class="stack">Next.js 14 · React · TypeScript · Tailwind · Supabase (Postgres, Auth, RLS) · Vercel · pdf.js · SheetJS</div></div>
+
+<div class="job"><div class="jh">Bro? — App de gimnasio offline-first (Android) <span><a href="https://github.com/ttt13412014/bro-gym-app">github.com/ttt13412014/bro-gym-app</a></span></div>
+<ul><li>Arma rutinas automáticamente según objetivo y días; motor de progresión (e1RM, deloads); 12 métodos y 877 ejercicios importados y traducidos al español.</li>
+<li>Modo cámara: detección de pose en el dispositivo (módulo nativo propio) que cuenta repeticiones.</li>
+<li>Funciona sin conexión y sincroniza con PowerSync; calorías con escaneo de código de barras (Open Food Facts); builds Android y actualizaciones OTA con EAS.</li></ul>
+<div class="stack">Expo · React Native · TypeScript · Supabase · PowerSync / SQLite · ML Kit</div></div>
+
+<div class="job"><div class="jh">Contador de bulonería — PWA con visión artificial <span><a href="https://ttt13412014.github.io/contador-buloneria/">ttt13412014.github.io/contador-buloneria</a></span></div>
+<ul><li>Cuenta tuercas y tornillos con la cámara usando una hoja A4 como escala; pipeline propio en JavaScript (umbral de Otsu, morfología, componentes conectados), sin librerías.</li>
+<li>Identifica la medida de una pieza, modo balanza con tara, diferencias contra stock, exporta a CSV/WhatsApp y funciona offline.</li></ul>
+<div class="stack">HTML · CSS · JavaScript · Canvas · Service Worker</div></div>
+
+<div class="job"><div class="jh">Otros proyectos personales</div>
+<ul><li><b>Cambiador de voz en tiempo real</b> (Python): DSP propio con phase vocoder y corrección de formantes, ~2–4 % de CPU.</li>
+<li><b>Estadísticas del Quini 6</b> (Python): análisis de más de 1400 sorteos con test chi² y reporte en PDF.</li>
+<li><b>Prototipo IoT</b>: apertura de portón por RF 433 MHz con ESP32, controlado desde una web (Web Serial API).</li></ul></div>
+
+<h2>Habilidades</h2>
+<div class="skills">
+<b>Frontend</b><span>React, Next.js, TypeScript, JavaScript, HTML/CSS, Tailwind, PWA</span>
+<b>Mobile</b><span>React Native, Expo, EAS Build/Update, apps offline-first</span>
+<b>Backend y datos</b><span>Supabase, PostgreSQL, Row Level Security, SQL, Excel/PDF, Python</span>
+<b>Otros</b><span>Git, Vercel, visión por computadora básica, ESP32/Arduino, desarrollo asistido por IA</span>
+<b>Logística</b><span>Depósito, control de stock e inventario, reparto</span>
+</div>
+
+<h2>Educación</h2>
+<p><span class="ph">[Completar: secundario / estudios / cursos]</span></p>
+</div></body></html>
